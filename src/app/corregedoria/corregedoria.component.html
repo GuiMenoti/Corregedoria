@@ -1,0 +1,47 @@
+<div class="top">
+    <p>3</p>
+  </div>
+  <h2 class="text-denuncia">Central de denúncias</h2>
+  <form   class="corregedoria-form">
+    <div class="container">
+      <div class="row">
+        <div class="form">
+          <label class="text-label">Qual o motivo da sua denuncia?</label>
+          <input class="input-denuncias" [(ngModel)]="motivo" name="motivo">
+      
+        </div>
+        <div class="form-text">
+          <label class="text-label">Observação:(opcional)</label>
+          <input class="input-denuncias" [(ngModel)]="observacao" name="observacao">
+
+      
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="form">
+          <label class="text-label">Informe a data do ocorrido?</label>
+          <input type="date" class="input-denuncias" [(ngModel)]="dataOcorrido" name="dataOcorrido">
+        </div>
+        <div class="form">
+          <label class="text-label">Nos envie a sua prova em video!</label>
+          <input  class="" type="file"   name="arquivo"  (change)="onFileSelected($event)">
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="form">
+          <label class="text-label">Informe o passaporte, do denunciado!</label>
+          <input type="number" class="input-denuncias"[(ngModel)]="passaporte" name="passaporte">
+     
+         
+        </div>
+
+      </div>
+      <img src="../../assets/pngwing.com.png" alt="Polícia">
+    </div>
+  
+    <div class="btn-denuncia">
+      <button (click)="enviarFormulario()" class="btn-enviar" type="submit">ENVIAR DENUNCIA</button>
+    </div>
+  </form>

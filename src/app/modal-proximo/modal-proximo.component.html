@@ -1,0 +1,11 @@
+<h2 mat-dialog-title>Confirmação de Navegação</h2>
+<mat-dialog-content>Você está prestes a avançar para a próxima etapa da corregedoria, antes de uma olhada nos termos!
+<br><a target="_blank" href="https://web.whatsapp.com/">Termos</a><br><input class="checkbox" (click)="detectColor()"  [(ngModel)]="termsAccepted" id="check" type="checkbox"> Ao clicar neste botão, você concorda com os nossos Termos de Uso.
+
+</mat-dialog-content>
+
+<div class="container-modal-btn">
+
+  <button class="btn-cancelar" mat-button [mat-dialog-close]="true" cdkFocusInitial>Cancelar</button>
+  <button class="btn-desable" id="btn-proximo" mat-button (click)="navigateToOtherComponent()" >pronto</button >
+  </div>

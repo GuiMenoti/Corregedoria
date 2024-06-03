@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.top {
+    background-color: black;
+}
+
+.container {
+    background-color: gray;
+    margin: 50px 190px ;
+    justify-content: center;
+    height: 60vh;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+
+.text-denuncia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    text-align: center;
+  
+  
+    
+}
+
+h2 {
+    font-size: 35px;
+  
+height: 35px;
+text-align: center;
+font-family: "Permanent Marker";
+}
+.text-label {
+    color: white;
+    font-size: 18px;
+
+}
+.input-denuncias {
+   
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.btn-video {
+    border: none;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-video:hover {
+   background-color: rgb(211, 211, 211);
+}
+
+
+.form {
+    padding: 50px 0px 10px 0px;
+    margin-left: 43px;
+    justify-content: center;
+   
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-text {
+  
+        padding: 50px 0px 0px 0px;
+        margin-left: 30px;
+        justify-content: start;
+       
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+ 
+}
+
+
+.btn-denuncia {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 70px;
+    margin-top: 100px;
+}
+
+
+.btn-enviar {
+    width: 150px;
+    height: 35px;
+    border: none;
+    background-color: rgb(0, 0, 80);
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}

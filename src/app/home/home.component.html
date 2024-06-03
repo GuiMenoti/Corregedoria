@@ -1,0 +1,37 @@
+<main class="container-home">
+    <section class="container-one-page">
+
+    </section>
+
+    <section class="container-two-page">
+        <h2 class="text-corregedoria">Corregedoria<br></h2>
+        <p class="paragrafo-corregedoria">Este sistema foi desenvolvido com o compromisso de promover a integridade, a
+            transparência e a responsabilização dentro da Polícia Federal da After. Como parte essencial do aparato de
+            justiça, a corregedoria desempenha um papel fundamental na manutenção da confiança pública e na garantia de
+            que os mais altos padrões éticos e profissionais sejam mantidos.</p>
+
+        <div class="container-input">
+            <h2 style="font-size: 17px; font-weight: 600; margin: 20px; display: flex; justify-content: center;">INFORME OS SEUS DADOS</h2>
+            <div class="div-input">
+                <label for="Nome">Nome</label>
+                <input id="nome" placeholder="Exemplo: Guigui" type="text">
+                <div id="erroNome" class="erro"></div>
+            </div>
+            <div class="div-input">
+                <label for="RG">RG</label>
+                <input id="rg" placeholder="Exemplo: 172345" type="Number">
+                <div id="erroRg" class="erro"></div>
+            </div>
+            <div class="div-input">
+                <label for="Discord">ID Discord</label>
+                <input id="discord" placeholder="Exemplo: 12055360414157415 " type="number">
+                <div id="erroDiscord" class="erro"></div>
+            </div>
+        </div>
+        <div class="container-button">
+            <button id="button-proximo" (click)="openDialog()">Próximo <a></a><span class="fa fa-arrow-right"></span></button>
+        </div>
+    </section>
+
+   
+</main>

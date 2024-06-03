@@ -1,0 +1,57 @@
+.btn-close {
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-modal-btn {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.btn-desable {
+    border: none;
+    width: 80px;
+    height: 35px;
+    color: white;
+    border-radius: 15px;
+    // background-color:  rgb(0, 0, 80);
+   background-color: gray;
+    text-align: center;
+}
+
+.btn-pronto:hover {
+    background-color: rgb(0, 0, 100);
+}
+
+.btn-pronto {
+    border: none;
+    width: 80px;
+    height: 35px;
+    color: white;
+    border-radius: 15px;
+    background-color:  rgb(0, 0, 80);
+  cursor: pointer;
+    text-align: center;
+}
+
+.btn-cancelar {
+    border: none;
+    width: 80px;
+    height: 35px;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    background-color:  rgb(240, 240, 240);
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.checkbox {
+    cursor: pointer;
+    margin: 2px solid blue;
+}
