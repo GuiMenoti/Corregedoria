@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter  } from '@angular/core';
 import { Router } from '@angular/router';
 import { ModalProximoComponent } from '../modal-proximo/modal-proximo.component';
 import {
   MatDialog,
 
 } from '@angular/material/dialog';
+import { ServiceVALUEComponent } from '../services/service-value/service-value.component';
 
 @Component({
   selector: 'app-home',
@@ -12,13 +13,16 @@ import {
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-
-  constructor(public dialog: MatDialog) {
+    nome: string = "";
+    rg: string = "";
+    discord: string = "";
+  constructor(public dialog: MatDialog, private serviceVALUE: ServiceVALUEComponent) {
 
   }
 
 
   openDialog(): void {
+    
     const nomeElement: HTMLInputElement | null = document.getElementById("nome") as HTMLInputElement;
     const rgElement: HTMLInputElement | null = document.getElementById("rg") as HTMLInputElement;
     const discordElement: HTMLInputElement | null = document.getElementById("discord") as HTMLInputElement;
@@ -54,12 +58,14 @@ export class HomeComponent {
         } else {
             erroDiscord.innerHTML = "";
         }
-
         // Verifica se todos os campos estão preenchidos e se o botão está habilitado
         if (nome !== "" && rg !== "" && discord !== "" && !button) {
+        this.serviceVALUE.setDadosInput(this.nome, this.rg, this.discord);
+            
             const dialogRef = this.dialog.open(ModalProximoComponent, {
                 panelClass: 'custom-dialog-container' 
             });
+           
             console.log("Abrir diálogo");
         } else {
             console.log("Preencha todos os campos e/ou habilite o botão.");
@@ -67,6 +73,8 @@ export class HomeComponent {
     } else {
         console.error("Elemento não encontrado.");
     }
+
+  
 }
 
 }

@@ -14,17 +14,17 @@
             <h2 style="font-size: 17px; font-weight: 600; margin: 20px; display: flex; justify-content: center;">INFORME OS SEUS DADOS</h2>
             <div class="div-input">
                 <label for="Nome">Nome</label>
-                <input id="nome" placeholder="Exemplo: Guigui" type="text">
+                <input  [(ngModel)]="nome" id="nome" placeholder="Exemplo: Guigui" type="text">
                 <div id="erroNome" class="erro"></div>
             </div>
             <div class="div-input">
                 <label for="RG">RG</label>
-                <input id="rg" placeholder="Exemplo: 172345" type="Number">
+                <input [(ngModel)]="rg" id="rg" placeholder="Exemplo: 172345" type="Number">
                 <div id="erroRg" class="erro"></div>
             </div>
             <div class="div-input">
                 <label for="Discord">ID Discord</label>
-                <input id="discord" placeholder="Exemplo: 12055360414157415 " type="number">
+                <input id="discord" [(ngModel)]="discord" placeholder="Exemplo: 12055360414157415 " type="number">
                 <div id="erroDiscord" class="erro"></div>
             </div>
         </div>

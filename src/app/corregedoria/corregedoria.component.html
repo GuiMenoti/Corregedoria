@@ -7,12 +7,13 @@
       <div class="row">
         <div class="form">
           <label class="text-label">Qual o motivo da sua denuncia?</label>
-          <input class="input-denuncias" [(ngModel)]="motivo" name="motivo">
+          <input id="motivo" class="input-denuncias" [(ngModel)]="motivo" name="motivo">
+          <div id="erroMotivo" class="erro"></div>
       
         </div>
-        <div class="form-text">
+        <div class="form">
           <label class="text-label">Observação:(opcional)</label>
-          <input class="input-denuncias" [(ngModel)]="observacao" name="observacao">
+          <textarea class="input-denuncias-observ" [(ngModel)]="observacao" name="observacao"></textarea>
 
       
         </div>
@@ -21,18 +22,23 @@
       <div class="row">
         <div class="form">
           <label class="text-label">Informe a data do ocorrido?</label>
-          <input type="date" class="input-denuncias" [(ngModel)]="dataOcorrido" name="dataOcorrido">
+          <input id="data" type="date" class="input-denuncias" [(ngModel)]="dataOcorrido" name="dataOcorrido">
+          <div id="erroData" class="erro"></div>
         </div>
         <div class="form">
           <label class="text-label">Nos envie a sua prova em video!</label>
-          <input  class="" type="file"   name="arquivo"  (change)="onFileSelected($event)">
+          <label class="custom-file-label">Enviar
+          <input id="video" class="" type="file"   name="arquivo"  (change)="onFileSelected($event)">
+        </label>
+        <div id="erroVideo" class="erro"></div>
         </div>
       </div>
   
       <div class="row">
         <div class="form">
           <label class="text-label">Informe o passaporte, do denunciado!</label>
-          <input type="number" class="input-denuncias"[(ngModel)]="passaporte" name="passaporte">
+          <input id="passaporte" type="number" class="input-denuncias"[(ngModel)]="passaporte" name="passaporte">
+          <div id="erroPassaporte" class="erro"></div>
      
          
         </div>

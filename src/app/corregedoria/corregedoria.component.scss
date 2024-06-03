@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 
@@ -8,41 +7,73 @@
 
 .container {
     background-color: gray;
-    margin: 50px 190px ;
+    margin: 50px 80px;
     justify-content: center;
     height: 60vh;
     border-radius: 10px;
     display: flex;
+
     gap: 10px;
 }
 
-
+.erro {
+    color: red;
+    font-size: 12px;
+  }
 .text-denuncia {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 30px;
     text-align: center;
-  
-  
-    
+
+
+
+}
+.custom-file-label {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 15px;
+    background-color: #010370;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para o input de arquivo oculto */
+.custom-file-label input {
+    display: none;
 }
 
 h2 {
     font-size: 35px;
-  
-height: 35px;
-text-align: center;
-font-family: "Permanent Marker";
+
+    height: 35px;
+    text-align: center;
+    font-family: "Permanent Marker";
 }
+
 .text-label {
     color: white;
     font-size: 18px;
 
 }
+
 .input-denuncias {
-   
+
     height: 35px;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.input-denuncias-observ {
+
+    height: 200px;
+    font-size: 14px;
+    padding: 8px;
     border-radius: 10px;
     border: 2px solid black;
 }
@@ -55,7 +86,7 @@ font-family: "Permanent Marker";
 }
 
 .btn-video:hover {
-   background-color: rgb(211, 211, 211);
+    background-color: rgb(211, 211, 211);
 }
 
 
@@ -63,22 +94,22 @@ font-family: "Permanent Marker";
     padding: 50px 0px 10px 0px;
     margin-left: 43px;
     justify-content: center;
-   
+
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
 .form-text {
-  
-        padding: 50px 0px 0px 0px;
-        margin-left: 30px;
-        justify-content: start;
-       
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
- 
+
+    padding: 50px 0px 0px 0px;
+    margin-left: 30px;
+    justify-content: start;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
 }
 
 

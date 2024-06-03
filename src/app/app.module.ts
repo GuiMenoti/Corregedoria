@@ -14,6 +14,7 @@ import {MatRadioModule} from '@angular/material/radio';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModalfimComponent } from './modalfim/modalfim.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ServiceVALUEComponent } from './services/service-value/service-value.component';
 
 
 
@@ -25,6 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
     ModalProximoComponent,
     CorregedoriaComponent,
     ModalfimComponent,
+    ServiceVALUEComponent,
   
 
 
@@ -44,7 +46,7 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule
     
   ],
-  providers: [],
+  providers: [ServiceVALUEComponent],
 
   bootstrap: [AppComponent]
 })
